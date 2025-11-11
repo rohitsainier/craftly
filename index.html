@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Craftly - The all-in-one media creation toolkit for macOS. AI-powered subtitles, video editing, background removal, and more.">
+    <meta name="keywords" content="macOS, video editor, subtitles, AI, background removal, media tools">
+    <meta name="author" content="Craftly">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Craftly - All-in-One Media Creation Toolkit">
+    <meta property="og:description" content="Stop juggling multiple apps. Get everything you need for content creation in one beautiful macOS application.">
+    <meta property="og:image" content="https://craftly.app/assets/og-image.png">
+    <meta property="og:url" content="https://craftly.app">
+    
+    <title>Craftly - All-in-One Media Creation Toolkit for macOS</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+</head>
+<body>
+    
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="#" class="logo">
+                    <div class="logo-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <rect width="32" height="32" rx="8" fill="url(#logo-gradient)"/>
+                            <path d="M16 8L20 12L16 16L12 12L16 8Z" fill="white" opacity="0.9"/>
+                            <path d="M16 16L20 20L16 24L12 20L16 16Z" fill="white" opacity="0.7"/>
+                            <defs>
+                                <linearGradient id="logo-gradient" x1="0" y1="0" x2="32" y2="32">
+                                    <stop offset="0%" stop-color="#667EEA"/>
+                                    <stop offset="100%" stop-color="#764BA2"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <span class="logo-text">Craftly</span>
+                </a>
+                
+                <div class="nav-links">
+                    <a href="#features" class="nav-link">Features</a>
+                    <a href="#showcase" class="nav-link">Showcase</a>
+                    <a href="#pricing" class="nav-link">Pricing</a>
+                    <a href="#faq" class="nav-link">FAQ</a>
+                </div>
+                
+                <div class="nav-actions">
+                    <a href="#download" class="btn btn-primary">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>
+                        </svg>
+                        Download
+                    </a>
+                </div>
+                
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-content">
+            <a href="#features" class="mobile-nav-link">Features</a>
+            <a href="#showcase" class="mobile-nav-link">Showcase</a>
+            <a href="#pricing" class="mobile-nav-link">Pricing</a>
+            <a href="#faq" class="mobile-nav-link">FAQ</a>
+            <a href="#download" class="btn btn-primary mobile-download">Download</a>
+        </div>
+    </div>
+    
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-background">
+            <div class="gradient-blob blob-1"></div>
+            <div class="gradient-blob blob-2"></div>
+            <div class="gradient-blob blob-3"></div>
+            <div class="floating-particles"></div>
+        </div>
+        
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-icon">✨</span>
+                    <span>Now available for macOS</span>
+                </div>
+                
+                <h1 class="hero-title">
+                    The All-in-One<br/>
+                    <span class="gradient-text">Media Creation Toolkit</span>
+                </h1>
+                
+                <p class="hero-description">
+                    Stop juggling multiple apps. Get everything you need for content creation 
+                    in one beautiful, native macOS application.
+                </p>
+                
+                <div class="hero-actions">
+                    <a href="#download" class="btn btn-large btn-primary">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>
+                        </svg>
+                        Download for macOS
+                    </a>
+                    <a href="#showcase" class="btn btn-large btn-secondary">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <polygon points="5 3 19 12 5 21 5 3"/>
+                        </svg>
+                        Watch Demo
+                    </a>
+                </div>
+                
+                <div class="hero-stats">
+                    <div class="stat">
+                        <div class="stat-value">6+</div>
+                        <div class="stat-label">Pro Tools</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-value">100+</div>
+                        <div class="stat-label">Languages</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-value">⚡</div>
+                        <div class="stat-label">Lightning Fast</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-visual">
+                <div class="app-window">
+                    <div class="window-controls">
+                        <span class="window-control close"></span>
+                        <span class="window-control minimize"></span>
+                        <span class="window-control maximize"></span>
+                    </div>
+                    <div class="window-content">
+                        <!-- Placeholder for app screenshot/video -->
+                        <img src="assets/images/app-screenshot.png" alt="Craftly Interface" class="app-preview">
+                    </div>
+                </div>
+                
+                <!-- Floating Feature Cards -->
+                <div class="floating-card card-1">
+                    <div class="card-icon">🎬</div>
+                    <div class="card-text">AI Subtitles</div>
+                </div>
+                <div class="floating-card card-2">
+                    <div class="card-icon">✂️</div>
+                    <div class="card-text">Video Clipper</div>
+                </div>
+                <div class="floating-card card-3">
+                    <div class="card-icon">🎨</div>
+                    <div class="card-text">BG Removal</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Features</span>
+                <h2 class="section-title">Everything you need<br/>in one powerful app</h2>
+                <p class="section-description">
+                    Professional-grade tools designed for creators, by creators.
+                </p>
+            </div>
+            
+            <div class="features-grid">
+                <!-- Feature Card 1 -->
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="feature-icon" style="background: linear-gradient(135deg, #667EEA 0%, #764BA2 100%);">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">AI Subtitle Studio</h3>
+                    <p class="feature-description">
+                        Generate accurate subtitles in 100+ languages using advanced AI. 
+                        Export as SRT or embed directly into videos.
+                    </p>
+                    <ul class="feature-list">
+                        <li>✓ 100+ language support</li>
+                        <li>✓ High accuracy transcription</li>
+                        <li>✓ Customizable styling</li>
+                        <li>✓ Real-time preview</li>
+                    </ul>
+                </div>
+                
+                <!-- Feature Card 2 -->
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon" style="background: linear-gradient(135deg, #F093FB 0%, #F5576C 100%);">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                            <circle cx="12" cy="12" r="3"/>
+                            <path d="M12 1v6m0 6v6m9-9h-6m-6 0H3"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Smart Video Clipper</h3>
+                    <p class="feature-description">
+                        Trim and extract clips with precision or let AI find the best moments. 
+                        Perfect for creating social media content.
+                    </p>
+                    <ul class="feature-list">
+                        <li>✓ AI-powered clip detection</li>
+                        <li>✓ Frame-accurate trimming</li>
+                        <li>✓ Batch processing</li>
+                        <li>✓ Multiple export formats</li>
+                    </ul>
+                </div>
+                
+                <!-- Feature Card 3 -->
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon" style="background: linear-gradient(135deg, #4FACFE 0%, #00F2FE 100%);">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                            <rect x="3" y="3" width="7" height="7"/>
+                            <rect x="14" y="3" width="7" height="7"/>
+                            <rect x="14" y="14" width="7" height="7"/>
+                            <rect x="3" y="14" width="7" height="7"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Media Tools Suite</h3>
+                    <p class="feature-description">
+                        Extract audio, convert videos, and manage your media files with ease. 
+                        All the essential tools in one place.
+                    </p>
+                    <ul class="feature-list">
+                        <li>✓ Audio extraction</li>
+                        <li>✓ Format conversion</li>
+                        <li>✓ Video compression</li>
+                        <li>✓ Metadata editor</li>
+                    </ul>
+                </div>
+                
+                <!-- Feature Card 4 -->
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="feature-icon" style="background: linear-gradient(135deg, #43E97B 0%, #38F9D7 100%);">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                            <rect x="3" y="3" width="18" height="18" rx="2"/>
+                            <circle cx="8.5" cy="8.5" r="1.5"/>
+                            <path d="M21 15l-5-5L5 21"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Video to GIF</h3>
+                    <p class="feature-description">
+                        Create high-quality animated GIFs from your videos. Perfect for 
+                        sharing moments on social media.
+                    </p>
+                    <ul class="feature-list">
+                        <li>✓ High-quality output</li>
+                        <li>✓ Customizable frame rate</li>
+                        <li>✓ Size optimization</li>
+                        <li>✓ Real-time preview</li>
+                    </ul>
+                </div>
+                
+                <!-- Feature Card 5 -->
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon" style="background: linear-gradient(135deg, #FA709A 0%, #FEE140 100%);">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                            <circle cx="12" cy="7" r="4"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Background Removal</h3>
+                    <p class="feature-description">
+                        Remove backgrounds from images and videos with AI. Replace with 
+                        solid colors, gradients, or custom images.
+                    </p>
+                    <ul class="feature-list">
+                        <li>✓ AI-powered precision</li>
+                        <li>✓ Video support</li>
+                        <li>✓ Custom backgrounds</li>
+                        <li>✓ Edge refinement</li>
+                    </ul>
+                </div>
+                
+                <!-- Feature Card 6 -->
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon" style="background: linear-gradient(135deg, #A8EDEA 0%, #FED6E3 100%);">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                            <rect x="3" y="3" width="18" height="18" rx="2"/>
+                            <path d="M9 3v18"/>
+                            <path d="M15 3v18"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Icon Generator</h3>
+                    <p class="feature-description">
+                        Generate all app icon sizes from a single image. Perfect for App Store 
+                        submissions and development.
+                    </p>
+                    <ul class="feature-list">
+                        <li>✓ All iOS/macOS sizes</li>
+                        <li>✓ One-click export</li>
+                        <li>✓ Automatic resizing</li>
+                        <li>✓ ZIP download</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Showcase Section -->
+    <section class="showcase" id="showcase">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">In Action</span>
+                <h2 class="section-title">See Craftly in action</h2>
+                <p class="section-description">
+                    Watch how easy it is to create professional content.
+                </p>
+            </div>
+            
+            <div class="showcase-grid">
+                <!-- Showcase Item 1 -->
+                <div class="showcase-item" data-aos="fade-up">
+                    <div class="showcase-media">
+                        <img src="assets/videos/subtitle-demo.gif" alt="Subtitle Generation Demo" class="showcase-gif">
+                        <div class="showcase-overlay">
+                            <button class="play-button">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
+                                    <polygon points="5 3 19 12 5 21 5 3"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="showcase-content">
+                        <h3>AI Subtitle Generation</h3>
+                        <p>Automatically transcribe and add subtitles to any video in seconds</p>
+                    </div>
+                </div>
+                
+                <!-- Showcase Item 2 -->
+                <div class="showcase-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="showcase-media">
+                        <img src="assets/videos/clipper-demo.gif" alt="Video Clipper Demo" class="showcase-gif">
+                        <div class="showcase-overlay">
+                            <button class="play-button">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
+                                    <polygon points="5 3 19 12 5 21 5 3"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="showcase-content">
+                        <h3>Smart Video Clipping</h3>
+                        <p>Extract the perfect moments from your videos with AI assistance</p>
+                    </div>
+                </div>
+                
+                <!-- Showcase Item 3 -->
+                <div class="showcase-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="showcase-media">
+                        <img src="assets/videos/background-removal-demo.gif" alt="Background Removal Demo" class="showcase-gif">
+                        <div class="showcase-overlay">
+                            <button class="play-button">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
+                                    <polygon points="5 3 19 12 5 21 5 3"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="showcase-content">
+                        <h3>Background Removal</h3>
+                        <p>Remove backgrounds from images and videos with AI precision</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Pricing Section -->
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Pricing</span>
+                <h2 class="section-title">Choose your plan</h2>
+                <p class="section-description">
+                    Start free, upgrade when you're ready.
+                </p>
+            </div>
+            
+            <div class="pricing-grid">
+                <!-- Free Plan -->
+                <div class="pricing-card" data-aos="fade-up">
+                    <div class="pricing-header">
+                        <h3 class="plan-name">Free</h3>
+                        <div class="plan-price">
+                            <span class="price-currency">$</span>
+                            <span class="price-amount">0</span>
+                            <span class="price-period">/forever</span>
+                        </div>
+                        <p class="plan-description">Perfect for trying out Craftly</p>
+                    </div>
+                    <ul class="plan-features">
+                        <li>
+                            <svg class="check-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <polyline points="20 6 9 17 4 12"/>
+                            </svg>
+                            <span>5 minutes of subtitle generation</span>
+                        </li>
+                        <li>
+                            <svg class="check-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <polyline points="20 6 9 17 4 12"/>
+                            </svg>
+                            <span>Basic video clipping</span>
+                        </li>
+                        <li>
+                            <svg class="check-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <polyline points="20 6 9 17 4 12"/>
+                            </svg>
+                            <span>Standard quality exports</span>
+                        </li>
+                        <li class="disabled">
+                            <svg class="x-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <line x1="18" y1="6" x2="6" y2="18"/>
+                                <line x1="6" y1="6" x2="18" y2="18"/>
+                            </svg>
+                            <span>Advanced AI features</span>
+                        </li>
+                    </ul>
+                    <a href="#download" class="btn btn-outline">Get Started</a>
+                </div>
+                
+                <!-- Pro Plan -->
+                <div class="pricing-card featured" data-aos="fade-up" data-aos-delay="100">
+                    <div class="popular-badge">Most Popular</div>
+                    <div class="pricing-header">
+                        <h3 class="plan-name">Pro</h3>
+                        <div class="plan-price">
+                            <span class="price-currency">$</span>
+                            <span class="price-amount">19</span>
+                            <span class="price-period">/month</span>
+                        </div>
+                        <p class="plan-description">For serious content creators</p>
+                    </div>
+                    <ul class="plan-features">
+                        <li>
+                            <svg class="check-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <polyline points="20 6 9 17 4 12"/>
+                            </svg>
+                            <span>Unlimited subtitle generation</span>
+                        </li>
+                        <li>
+                            <svg class="check-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <polyline points="20 6 9 17 4 12"/>
+                            </svg>
+                            <span>AI-powered video clipping</span>
+                        </li>
+                        <li>
+                            <svg class="check-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <polyline points="20 6 9 17 4 12"/>
+                            </svg>
+                            <span>4K exports</span>
+                        </li>
+                        <li>
+                            <svg class="check-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <polyline points="20 6 9 17 4 12"/>
+                            </svg>
+                            <span>Background removal</span>
+                        </li>
+                        <li>
+                            <svg class="check-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <polyline points="20 6 9 17 4 12"/>
+                            </svg>
+                            <span>Priority support</span>
+                        </li>
+                    </ul>
+                    <a href="#download" class="btn btn-primary">Start Free Trial</a>
+                </div>
+                
+                <!-- Lifetime Plan -->
+                <div class="pricing-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="pricing-header">
+                        <h3 class="plan-name">Lifetime</h3>
+                        <div class="plan-price">
+                            <span class="price-currency">$</span>
+                            <span class="price-amount">199</span>
+                            <span class="price-period">/once</span>
+                        </div>
+                        <p class="plan-description">Pay once, use forever</p>
+                    </div>
+                    <ul class="plan-features">
+                        <li>
+                            <svg class="check-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <polyline points="20 6 9 17 4 12"/>
+                            </svg>
+                            <span>All Pro features</span>
+                        </li>
+                        <li>
+                            <svg class="check-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <polyline points="20 6 9 17 4 12"/>
+                            </svg>
+                            <span>Lifetime updates</span>
+                        </li>
+                        <li>
+                            <svg class="check-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <polyline points="20 6 9 17 4 12"/>
+                            </svg>
+                            <span>Early access to new features</span>
+                        </li>
+                        <li>
+                            <svg class="check-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <polyline points="20 6 9 17 4 12"/>
+                            </svg>
+                            <span>VIP support</span>
+                        </li>
+                    </ul>
+                    <a href="#download" class="btn btn-outline">Buy Lifetime</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">FAQ</span>
+                <h2 class="section-title">Frequently asked questions</h2>
+                <p class="section-description">
+                    Got questions? We've got answers.
+                </p>
+            </div>
+            
+            <div class="faq-grid">
+                <div class="faq-item" data-aos="fade-up">
+                    <button class="faq-question">
+                        <span>Which video formats are supported?</span>
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <polyline points="6 9 12 15 18 9"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Craftly supports MP4, MOV, AVI, MKV, and most common video formats. All processing happens locally on your Mac for maximum privacy and speed.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="50">
+                    <button class="faq-question">
+                        <span>How accurate are the AI-generated subtitles?</span>
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <polyline points="6 9 12 15 18 9"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Our AI achieves 95%+ accuracy with clear audio. Accuracy depends on audio quality - we recommend using content with minimal background noise for best results.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="100">
+                    <button class="faq-question">
+                        <span>Does Craftly require an internet connection?</span>
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <polyline points="6 9 12 15 18 9"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>No! Craftly works completely offline after installation. All processing happens locally on your Mac, ensuring privacy and fast performance.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="150">
+                    <button class="faq-question">
+                        <span>What are the system requirements?</span>
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <polyline points="6 9 12 15 18 9"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Craftly requires macOS 12.0 or later. We recommend at least 8GB of RAM for optimal performance with large video files.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
+                    <button class="faq-question">
+                        <span>Can I cancel my subscription anytime?</span>
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <polyline points="6 9 12 15 18 9"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! You can cancel your subscription at any time from your App Store settings. You'll continue to have access until the end of your billing period.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="250">
+                    <button class="faq-question">
+                        <span>Is there a refund policy?</span>
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <polyline points="6 9 12 15 18 9"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>All purchases are handled through the App Store and are subject to Apple's refund policy. Generally, refunds are available within 14 days of purchase.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content" data-aos="zoom-in">
+                <h2 class="cta-title">Ready to create amazing content?</h2>
+                <p class="cta-description">
+                    Join thousands of creators who've already made the switch to Craftly.
+                </p>
+                <div class="cta-actions">
+                    <a href="#download" class="btn btn-large btn-primary">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>
+                        </svg>
+                        Download for macOS
+                    </a>
+                    <a href="mailto:support@craftly.app" class="btn btn-large btn-outline">
+                        Contact Sales
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                <rect width="32" height="32" rx="8" fill="url(#footer-logo-gradient)"/>
+                                <path d="M16 8L20 12L16 16L12 12L16 8Z" fill="white" opacity="0.9"/>
+                                <path d="M16 16L20 20L16 24L12 20L16 16Z" fill="white" opacity="0.7"/>
+                                <defs>
+                                    <linearGradient id="footer-logo-gradient" x1="0" y1="0" x2="32" y2="32">
+                                        <stop offset="0%" stop-color="#667EEA"/>
+                                        <stop offset="100%" stop-color="#764BA2"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <span class="logo-text">Craftly</span>
+                    </div>
+                    <p class="footer-description">
+                        The all-in-one media creation toolkit for macOS creators.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="GitHub">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.167 22 16.418 22 12c0-5.523-4.477-10-10-10z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Discord">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20.317 4.37a19.791 19.791 0 00-4.885-1.515.074.074 0 00-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 00-5.487 0 12.64 12.64 0 00-.617-1.25.077.077 0 00-.079-.037A19.736 19.736 0 003.677 4.37a.07.07 0 00-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 00.031.057 19.9 19.9 0 005.993 3.03.078.078 0 00.084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 00-.041-.106 13.107 13.107 0 01-1.872-.892.077.077 0 01-.008-.128 10.2 10.2 0 00.372-.292.074.074 0 01.077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 01.078.01c.12.098.246.198.373.292a.077.077 0 01-.006.127 12.299 12.299 0 01-1.873.892.077.077 0 00-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 00.084.028 19.839 19.839 0 006.002-3.03.077.077 0 00.032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 00-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h4 class="footer-title">Product</h4>
+                    <ul class="footer-links">
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#showcase">Showcase</a></li>
+                        <li><a href="#download">Download</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4 class="footer-title">Support</h4>
+                    <ul class="footer-links">
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="mailto:support@craftly.app">Contact</a></li>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">Tutorials</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4 class="footer-title">Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">License</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="footer-copyright">
+                    © 2024 Craftly. All rights reserved. Made with ❤️ for creators.
+                </p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Scripts -->
+    <script src="js/script.js"></script>
+</body>
+</html>
