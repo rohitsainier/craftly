@@ -811,7 +811,7 @@
         }
 
         trackDownloadClicks() {
-            $$('a[href="#download"]').forEach(link => {
+            $$('a[href="https://testflight.apple.com/join/rCjyxU41"]').forEach(link => {
                 link.addEventListener('click', () => {
                     this.trackEvent('Download Button', 'Click', link.textContent);
                 });
