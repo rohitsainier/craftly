@@ -1,5 +1,5 @@
 /* ===================================
-   CRAFTLY WEBSITE SCRIPTS
+   Editra WEBSITE SCRIPTS
    =================================== */
 
 (function() {
@@ -909,7 +909,7 @@
         }
 
         initializeComponents() {
-            console.log('🚀 Craftly Website Initialized');
+            console.log('🚀 Editra Website Initialized');
 
             // Initialize all components
             new Navbar();
@@ -930,7 +930,7 @@
 
             // Easter egg
             console.log(
-                '%c🎨 Craftly - Built with ❤️',
+                '%c🎨 Editra - Built with ❤️',
                 'background: linear-gradient(135deg, #667EEA 0%, #764BA2 100%); color: white; padding: 10px 20px; font-size: 16px; border-radius: 8px;'
             );
         }

@@ -1,6 +1,6 @@
-# 🎨 Craftly Website
+# 🎨 Editra Website
 
-Professional static website for Craftly - The all-in-one media creation toolkit for macOS.
+Professional static website for Editra - The all-in-one media creation toolkit for macOS.
 
 ## 🚀 Features
 
